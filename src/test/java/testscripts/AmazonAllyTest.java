@@ -1,9 +1,9 @@
 package testscripts;
 
+import org.testng.annotations.Test;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import java.io.IOException;
 import com.demo.base.DriverScript;
 import com.deque.axe.AXE;
