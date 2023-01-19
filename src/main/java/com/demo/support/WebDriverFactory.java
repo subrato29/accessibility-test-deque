@@ -14,7 +14,6 @@ import com.demo.util.Util;
 public class WebDriverFactory extends DriverScript{
 	
 	public static WebDriver initialize () throws NumberFormatException, IOException {
-		int implicitWait = Integer.parseInt (Util.getProperty("ImplicitWait"));
 		if (BROWSER.toUpperCase().equals("CHROME")) {
 			System.setProperty ("webdriver.chrome.silentOutput", "true");
 			System.setProperty ("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver");
