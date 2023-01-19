@@ -10,10 +10,11 @@ import com.deque.axe.AXE;
 
 public class AmazonAllyTest extends DriverScript{
 	@Test
-	public void amazonAllyTest() throws NumberFormatException, IOException {
+	public void amazonAllyTest() throws NumberFormatException, IOException, InterruptedException {
 		String tcId = "TC001";
 		String URL = "https://www.amazon.com/";
 		if (isRunnable(URL, tcId, 2)) {
+			Thread.sleep(1000);
 			JSONObject responseJSON = new AXE.Builder(driver, scriptUrl).analyze();
 			JSONArray violations = responseJSON.getJSONArray("violations");
 			if (violations.length() == 0) {
