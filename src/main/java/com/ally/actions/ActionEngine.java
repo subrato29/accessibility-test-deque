@@ -2,9 +2,9 @@ package com.ally.actions;
 
 import org.openqa.selenium.By;
 
-import com.ally.base.DriverScript;
+import com.ally.base.Base;
 
-public class ActionEngine extends DriverScript{
+public class ActionEngine extends Base {
 	
 	public static void sendKeys(String locator, String value) {
 		try {

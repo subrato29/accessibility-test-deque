@@ -5,10 +5,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import java.io.IOException;
-import com.ally.base.DriverScript;
+import com.ally.base.Base;
 import com.deque.axe.AXE;
 
-public class UberAllyTest extends DriverScript{
+public class UberAllyTest extends Base {
 	@Test
 	public void uberAllyTest() throws NumberFormatException, IOException {
 		String tcId = "TC001";

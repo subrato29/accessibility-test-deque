@@ -7,9 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.ally.actions.TestEngine;
-import com.ally.base.DriverScript;
+import com.ally.base.Base;
 
-public class WebDriverFactory extends DriverScript{
+public class WebDriverFactory extends Base {
 	
 	public static WebDriver initialize () throws NumberFormatException, IOException {
 		if (BROWSER.toUpperCase().equals("CHROME")) {

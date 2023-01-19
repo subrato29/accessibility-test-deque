@@ -2,9 +2,9 @@ package com.ally.actions;
 
 import org.openqa.selenium.By;
 
-import com.ally.base.DriverScript;
+import com.ally.base.Base;
 
-public class TestEngine extends DriverScript{
+public class TestEngine extends Base {
 	
 	static int MAX_TIME_OUT = 100;
 	/*
