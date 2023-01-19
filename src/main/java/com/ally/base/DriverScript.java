@@ -1,17 +1,17 @@
-package com.demo.base;
+package com.ally.base;
 
 import java.io.IOException;
 import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import com.demo.actions.TestEngine;
-import com.demo.support.WebDriverFactory;
-import com.demo.support.Xls_Reader;
-import com.demo.util.Util;
+import com.ally.actions.TestEngine;
+import com.ally.support.WebDriverFactory;
+import com.ally.support.Xls_Reader;
+import com.ally.util.Util;
 
 public class DriverScript {
 
-	public static final String TEST_DATA_PATH = System.getProperty("user.dir") + "/src/main/java/com/demo/data";
+	public static final String TEST_DATA_PATH = System.getProperty("user.dir") + "/src/main/java/com/ally/data";
 	public static Xls_Reader xls = new Xls_Reader (TEST_DATA_PATH + "/testdata.xlsx");
 	public static WebDriver driver = null;
 	public static String baseUrl = null;

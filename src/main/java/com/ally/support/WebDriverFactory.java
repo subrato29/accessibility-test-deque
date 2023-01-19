@@ -1,15 +1,13 @@
-package com.demo.support;
+package com.ally.support;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.demo.actions.TestEngine;
-import com.demo.base.DriverScript;
-import com.demo.util.Util;
+import com.ally.actions.TestEngine;
+import com.ally.base.DriverScript;
 
 public class WebDriverFactory extends DriverScript{
 	

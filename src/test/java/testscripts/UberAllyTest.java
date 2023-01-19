@@ -5,7 +5,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import java.io.IOException;
-import com.demo.base.DriverScript;
+import com.ally.base.DriverScript;
 import com.deque.axe.AXE;
 
 public class UberAllyTest extends DriverScript{

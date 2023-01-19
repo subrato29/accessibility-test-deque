@@ -1,8 +1,8 @@
-package com.demo.actions;
+package com.ally.actions;
 
 import org.openqa.selenium.By;
 
-import com.demo.base.DriverScript;
+import com.ally.base.DriverScript;
 
 public class TestEngine extends DriverScript{
 	

@@ -1,10 +1,7 @@
-package com.demo.util;
+package com.ally.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 
 public class Util {
