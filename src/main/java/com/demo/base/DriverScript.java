@@ -1,12 +1,10 @@
 package com.demo.base;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import com.demo.actions.TestEngine;
-import com.demo.support.SauceSupport;
 import com.demo.support.WebDriverFactory;
 import com.demo.support.Xls_Reader;
 import com.demo.util.Util;
@@ -33,8 +31,6 @@ public class DriverScript {
 					String platform = Util.getProperty("Platform");
 					if (platform.toUpperCase().equals("LOCAL")) {
 						WebDriverFactory.initialize();
-					} else if (platform.toUpperCase().equals("SAUCE")) {
-						SauceSupport.setUp(BROWSER, tcId);
 					}
 					return true;
 				}

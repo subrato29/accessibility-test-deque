@@ -21,11 +21,4 @@ public class Util {
 			return null;
 		}
 	}
-	
-	public static String getDateTime() {
-		DateFormat df = new SimpleDateFormat("MM/dd/yy HH:mm:ss");
-	       Date dateobj = new Date();
-	       return(df.format(dateobj).replace("/", "_")
-	    		   .replace(" ", "_").replace(":", "_"));
-	}
 }
