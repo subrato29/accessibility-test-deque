@@ -20,7 +20,6 @@ public class WebDriverFactory extends DriverScript{
 			System.setProperty ("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver");
 			driver = new ChromeDriver();
 			TestEngine.deleteCookies();
-			driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 			driver.get (baseUrl);
 			TestEngine.maximize();
 		} else if (BROWSER.toUpperCase().equals("IE")) {
