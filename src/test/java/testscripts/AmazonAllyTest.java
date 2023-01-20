@@ -11,9 +11,8 @@ import com.deque.axe.AXE;
 public class AmazonAllyTest extends Base {
 	@Test
 	public void amazonAllyTest() throws NumberFormatException, IOException, InterruptedException {
-		String tcId = "TC001";
 		String URL = "https://www.amazon.com/";
-		if (isRunnable(URL, tcId, 2)) {
+		if (isRunnable(URL)) {
 			Thread.sleep(1000);
 			JSONObject responseJSON = new AXE.Builder(driver, scriptUrl).analyze();
 			JSONArray violations = responseJSON.getJSONArray("violations");

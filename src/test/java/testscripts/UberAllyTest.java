@@ -11,9 +11,8 @@ import com.deque.axe.AXE;
 public class UberAllyTest extends Base {
 	@Test
 	public void uberAllyTest() throws NumberFormatException, IOException {
-		String tcId = "TC001";
 		String URL = "https://www.uber.com/";
-		if (isRunnable(URL, tcId, 2)) {
+		if (isRunnable(URL)) {
 			JSONObject responseJSON = new AXE.Builder(driver, scriptUrl).analyze();
 			JSONArray violations = responseJSON.getJSONArray("violations");
 			if (violations.length() == 0) {
